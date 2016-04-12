@@ -1,7 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Дмитрий Быкин](https://up.htmlacademy.ru/htmlcss/13/user/110698).
-* Наставник: [Николай Пойманов](https://up.htmlacademy.ru/htmlcss/13/user/id23280).
+* Наставник: [Николай Пойманов](https://up.htmlacademy.ru/htmlcss/13/user/23280).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
