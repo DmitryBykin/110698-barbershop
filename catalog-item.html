@@ -74,7 +74,7 @@
                 </p>
                 <div class="price-and-buybtn">
                     <div class="price"> 2 900 руб. </div>
-                    <div class="btn btn-buy"> КУПИТЬ </div>
+                    <button class="btn btn-buy" onclick="add_to_cart()"> КУПИТЬ </button>
                 </div>
                 <span class="item-consists-text"> В НАБОР ВХОДЯТ: </span>
                 <ul class="item-consists-list">
@@ -112,5 +112,11 @@
             </div>
       </div> <!-- end container -->
     </footer>
+        
+    <script>
+        function add_to_cart(){
+            alert('Товар добавлен в корзину');            
+        }
+    </script>
 </body>
 </html>
