@@ -8,10 +8,8 @@
 <body>
     
   <header class="catalog-header">
-    <div class="container">            
-      <span class="barbershop-logo">
-        Barbershop
-      </span>
+    <div class="container clearfix">                  
+      <a class="barbershop-logo" href="index.html"></a>
       <nav class="catalog-nav">
         <ul>
           <li>
@@ -55,7 +53,7 @@
   </div> <!-- end catalog-title-block -->
     
     <main class="catalog-block">
-      <div class="container">        
+      <div class="container clearfix">        
         <section class="searching-block">
           <form class="searching-form" action="www.barbershop.ru/search" method="get">
             <div class="searching-by-manufacturer">
@@ -214,30 +212,31 @@
               </div>
             </article>
                 
-          </div> <!-- end items-index-block -->  
+            <div class="clearfix"></div>          
             
-          <div class="btn-pages">
-            <ul class="pagination-list">
-              <li class="paginator-item"> 
-                <a class="pagitanation-link" href="#">1</a> 
-              </li>
-              <li class="paginator-item"> 
-                <span class="paginator-link paginator-link-active">2</span> 
-              </li>
-              <li class="paginator-item">
-                <a class="pagitanation-link" href="#">3</a> 
-              </li>
-              <li class="paginator-item">
-                <a class="pagitanation-link" href="#">4</a> 
-              </li>                    
-            </ul>
-          </div> <!-- end btn-pages -->
+            <div class="btn-pages">
+              <ul class="pagination-list clearfix">
+                <li class="paginator-item"> 
+                  <a class="pagitanation-link" href="#">1</a> 
+                </li>
+                <li class="paginator-item"> 
+                  <span class="paginator-link paginator-link-active">2</span> 
+                </li>
+                <li class="paginator-item">
+                  <a class="pagitanation-link" href="#">3</a> 
+                </li>
+                <li class="paginator-item">
+                  <a class="pagitanation-link" href="#">4</a> 
+                </li>                    
+              </ul>
+            </div> <!-- end btn-pages -->
+          </div> <!-- end items-index-block --> 
             
       </div> <!-- end container -->           
     </main> <!-- end catalog-block -->
     
     <footer class="catalog-footer">
-      <div class="container">
+      <div class="container clearfix">
         <div class="footer-contacts">
           <p> 
             Барбершоп «Бородинский»<br>
@@ -261,14 +260,16 @@
 		    </li>
 			<li class="social-item">
 		      <a href="#" class="social-link social-link-inst">
-		        instagram
+		        inst
 			 </a>
 		    </li>
 		  </ul>          
         </div>
         <div class="footer-copyright">
             <p>Разработано:</p>
-            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+            <a href="https://htmlacademy.ru">
+              <div class="btn">HTML Academy</div>
+            </a>
         </div>
       </div> <!-- end container -->
     </footer>    

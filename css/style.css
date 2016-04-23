@@ -1,25 +1,199 @@
-body {
-	/* Порядок перечисления брал из задания, по-моему логичнее начинать с font-family
-		 тем более, что при записи в одну строчку с этого параметра и начинается все
-	*/
+body {	
 	font-size: 18px;
 	line-height: 18px;
-	color: #ffffff;
+	//color: #ffffff; 
+    color: black;
 	font-weight: bold;
-	font-family: "PT Sans Narrow Bold";
+	font-family: "PT Sans Narrow Bold";    
 }
 
 h1 {
 	font-size: 30px;
 	line-height: 42px;
 	color: #000000;
-	/*Я так понимаю эти параметры здесь повторять не надо, наследуются от body?*/
-	/*font-weight: bold;
-	font-family: "PT Sans Narrow Bold";*/
 }
 
 h2 {
-  font-size: 24px;
-	line-height: 30px;
-	color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+ul {
+  list-style: none;  /* убираем у всех списков точки */
+}
+ul li {
+  background-color: aquamarine; 
+}
+
+.container {
+  width: 940px;  
+  margin: 0 auto;
+  padding: 0 10px;
+  border: 1px solid black;    
+}
+.catalog-header {
+  height: 72px;
+  //background-color: black;
+  background-color: burlywood;
+}
+.barbershop-logo {  
+  width: 150px;
+  height: 72px;
+  background: #939393 url('../img/Logo.png') no-repeat 50% 50%;     
+  float: left;
+  margin-right: 40px;  
+}
+.catalog-nav {  
+  width: 640px;
+  float: left;
+  background-color: antiquewhite;
+}
+.user-block {
+  //height: 72px;
+  width: 100px;
+  float: right;
+  background-color: beige;
+}
+
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.catalog-nav,
+.user-block {
+  margin-top: 29px;  
+}
+.catalog-nav ul {
+  list-style: none;  
+}
+.catalog-nav ul li {
+  float: left;
+  margin-right: 40px;
+}
+
+.catalog-title-block, 
+.catalog-block {
+  background: url('../img/pattern-for-main-block.jpg') repeat;  /* фон для гланого содержимого */
+  padding-top: 60px;
+}
+
+.catalog-title-block ul li {
+  margin-right: 40px;  
+  float: left;
+}
+
+.searching-block {
+  width: 220px;    
+  float: left;
+  background-color: beige;  
+}
+.items-index-block {
+  width: 700px; 
+  margin-left: 20px;
+  float: left;  
+  background-color: bisque;  
+}
+
+article {
+  background-color: darkgray;
+}
+.item-content {
+  width: 220px;
+  height: 290px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+.item-content:nth-child(3n){
+  margin-right: 0;
+}
+.item-title {
+  font-size: 12px;
+  padding: 5px 10px;
+  height: 63px;
+}
+.btn-pages {
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+.btn-pages ul li {
+  width: 43px;
+  height: 43px;
+  float: left;
+  margin-right: 7px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.catalog-footer{
+  height: 190px;
+  background-color: antiquewhite;
+}
+.footer-contacts {
+  width: 310px;
+  height: 90px;
+  margin-top: 60px;  
+  margin-right: 90px;
+  float: left;  
+  background-color: beige;
+}
+.footer-social {
+  width: 141px;
+  height: 80px;
+  margin-top: 60px;  
+  float: left;  
+  background-color: beige;
+}
+
+.footer-copyright {
+  width: 140px;
+  height: 80px;
+  margin-top: 60px;  
+  float: right;  
+  background-color: beige;
+}
+.footer-social ul li {
+  width: 43px;
+  height: 43px;
+  margin-right: 6px;
+  float: left;  
+}
+.footer-social ul li:last-child {
+  margin-right: 0;
+}
+.btn {
+  min-width: 43px;
+  height: 43px;
+  background-color: black;
+  color: white;
+}
+.price-and-buybtn {
+  width: 187px;
+  height: 43px;
+  margin: 0 auto;
+  background-color: #e5e5e5;  
+}
+.price {
+  width: 109px;
+  text-align: center;
+  margin-top: 12px;
+  float: left;
+  background-color: aqua;
+}
+.btn-buy {
+  width: 78px;
+  float: right;
+}
+.price-and-buybtn:after {
+  content: "";
+  display: table;
+  clear: both;
 }
