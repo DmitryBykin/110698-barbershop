@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title> Барбершоп - Средства для ухода </title>     
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">  
 </head>
 <body>
     
   <header class="catalog-header">
     <div class="container clearfix">                  
-      <a class="barbershop-logo" href="index.html"></a>
+      <a class="barbershop-logo" href="index.html">
+        <img src="img/Logo.png" width="111" height="24" alt="Logo">
+      </a>
       <nav class="catalog-nav">
         <ul>
           <li>
-            <a href="info.html">Информация</a>
+            <a href="info.html">ИНФОРМАЦИЯ</a>
           </li>
           <li>
             <a href="news.html">Новости</a>
@@ -21,8 +24,8 @@
           <li>
             <a href="price.html">Прайс-лист</a> 
           </li>
-          <li>
-            <a class="active-page" href="shop.html" >Магазин</a> 
+          <li class="active-page">
+            <a href="shop.html" >Магазин</a> 
           </li>
           <li> 
             <a href="contacts.html">Контакты</a>
@@ -36,7 +39,7 @@
   </header>
         
   <div class="catalog-title-block">
-    <div class="container">
+    <div class="container clearfix">
       <h1> Средства для ухода </h1>
         <ul class="breadcrumbs">
           <li>
@@ -109,110 +112,110 @@
           </section> <!-- end searching block -->   
             
           <div class="items-index-block">
-                
-            <article class="item-content">                    
-              <figure>
-                <a href="catalog-item.html">
-                  <img src="img/bax_220x165.jpg" width="220" height="165" alt="Набор 'BAXTER OF CALIFORNIA'">
-                </a>
-              </figure>
-              <h2 class="item-title">
-                <a href="catalog-item.html">
-                  Набор для путешествий "BAXTER OF CALIFORNIA"
-                </a>
-              </h2>                    
-              <div class="price-and-buybtn">
-                  <div class="price">2 900 руб.</div>
-                  <button class="btn btn-buy">Купить</button> <!-- убрал  onclick="add_to_cart() -->
-              </div>
-            </article>
-                
-            <article class="item-content">
-              <figure>
+            <div class="items-wrapper clearfix">
+              <article class="item-content">                    
+                <figure>
                   <a href="catalog-item.html">
-                      <img src="img/cond_220x165.jpg" width="220" height="165" alt="Кондиционер 'BAXTER OF CALIFORNIA'">
+                    <img src="img/bax_220x165.jpg" width="220" height="165" alt="Набор 'BAXTER OF CALIFORNIA'">
                   </a>
-              </figure>
-              <h2 class="item-title">
+                </figure>
+                <h2 class="item-title">
                   <a href="catalog-item.html">
-                      Увлажнаяющий кондиционер "BAXTER OF CALIFORNIA"
+                    Набор для путешествий "BAXTER OF CALIFORNIA"
                   </a>
-              </h2>
-              <div class="price-and-buybtn">
-                  <div class="price">750 руб.</div>
-                  <button class="btn btn-buy">Купить</button>
-              </div>
-            </article>
-                
-            <article class="item-content">
-              <figure>
-                <a href="catalog-item.html">
-                  <img src="img/gel_220x165.jpg" width="220" height="165" alt="Гель для волос 'SUAVECITO'">
+                </h2>                    
+                <a class="price-and-buybtn" href="#">                  
+                    <div class="price">2 900 руб.</div>
+                    <div class="btn btn-buy">Купить</div> <!-- убрал  onclick="add_to_cart() -->
                 </a>
+              </article>
+
+              <article class="item-content">
+                <figure>
+                    <a href="catalog-item.html">
+                        <img src="img/cond_220x165.jpg" width="220" height="165" alt="Кондиционер 'BAXTER OF CALIFORNIA'">
+                    </a>
                 </figure>
                 <h2 class="item-title">
                     <a href="catalog-item.html">
-                        Гель для волос "SUAVECITO"
+                        Увлажнаяющий кондиционер "BAXTER OF CALIFORNIA"
                     </a>
                 </h2>
                 <div class="price-and-buybtn">
-                  <div class="price">290 руб.</div>
+                    <div class="price">750 руб.</div>
+                    <button class="btn btn-buy">Купить</button>
+                </div>
+              </article>
+
+              <article class="item-content">
+                <figure>
+                  <a href="catalog-item.html">
+                    <img src="img/gel_220x165.jpg" width="220" height="165" alt="Гель для волос 'SUAVECITO'">
+                  </a>
+                  </figure>
+                  <h2 class="item-title">
+                      <a href="catalog-item.html">
+                          Гель для волос "SUAVECITO"
+                      </a>
+                  </h2>
+                  <div class="price-and-buybtn">
+                    <div class="price">290 руб.</div>
+                    <button class="btn btn-buy">Купить</button>
+                  </div>
+              </article>
+
+              <article class="item-content">
+                <figure>
+                  <a href="catalog-item.html">
+                    <img src="img/clay_220x165.jpg" width="220" height="165" alt="Глина для укладки волос 'AMERICA CREW'">
+                  </a>
+                </figure>
+                <h2 class="item-title">
+                  <a href="catalog-item.html">
+                    Глина для укладки волос "AMERICA CREW"
+                  </a>
+                </h2>
+                <div class="price-and-buybtn">
+                  <div class="price">500 руб.</div>
                   <button class="btn btn-buy">Купить</button>
                 </div>
-            </article>
-                
-            <article class="item-content">
-              <figure>
-                <a href="catalog-item.html">
-                  <img src="img/clay_220x165.jpg" width="220" height="165" alt="Глина для укладки волос 'AMERICA CREW'">
-                </a>
-              </figure>
-              <h2 class="item-title">
-                <a href="catalog-item.html">
-                  Глина для укладки волос "AMERICA CREW"
-                </a>
-              </h2>
-              <div class="price-and-buybtn">
-                <div class="price">500 руб.</div>
-                <button class="btn btn-buy">Купить</button>
-              </div>
-            </article>
-                
-            <article class="item-content">
-              <figure>
-                <a href="catalog-item.html">
-                  <img src="img/gel_crew_220x165.jpg" width="220" height="165" alt="Гель для волос 'AMERICA CREW'">
-                </a>
-              </figure>
-              <h2 class="item-title">
-                <a href="catalog-item.html">
-                  Гель для волос "AMERICA CREW"
-                </a>
-              </h2>
-              <div class="price-and-buybtn">
-                <div class="price">300 руб.</div>
-                <button class="btn btn-buy">Купить</button>
-              </div>
-            </article>
-                
-            <article class="item-content">
-              <figure>
-                <a href="catalog-item.html">
-                  <img src="img/shaving_220x165.jpg" width="220" height="165" alt="Набор для бритья 'BAXTER OF CALIFORNIA'">
-                </a>
-              </figure>
-              <h2 class="item-title">
-                <a href="catalog-item.html">
-                  Набор для бритья "BAXTER OF CALIFORNIA"
-                </a>
-              </h2>
-              <div class="price-and-buybtn">
-                <div class="price">3 900 руб.</div>
-                <button class="btn btn-buy">Купить</button>
-              </div>
-            </article>
-                
-            <div class="clearfix"></div>          
+              </article>
+
+              <article class="item-content">
+                <figure>
+                  <a href="catalog-item.html">
+                    <img src="img/gel_crew_220x165.jpg" width="220" height="165" alt="Гель для волос 'AMERICA CREW'">
+                  </a>
+                </figure>
+                <h2 class="item-title">
+                  <a href="catalog-item.html">
+                    Гель для волос "AMERICA CREW"
+                  </a>
+                </h2>
+                <div class="price-and-buybtn">
+                  <div class="price">300 руб.</div>
+                  <button class="btn btn-buy">Купить</button>
+                </div>
+              </article>
+
+              <article class="item-content">
+                <figure>
+                  <a href="catalog-item.html">
+                    <img src="img/shaving_220x165.jpg" width="220" height="165" alt="Набор для бритья 'BAXTER OF CALIFORNIA'">
+                  </a>
+                </figure>
+                <h2 class="item-title">
+                  <a href="catalog-item.html">
+                    Набор для бритья "BAXTER OF CALIFORNIA"
+                  </a>
+                </h2>
+                <div class="price-and-buybtn">
+                  <div class="price">3 900 руб.</div>
+                  <button class="btn btn-buy">Купить</button>
+                </div>
+              </article>
+            </div> <!-- end items-wrapper -->
+            
             
             <div class="btn-pages">
               <ul class="pagination-list clearfix">

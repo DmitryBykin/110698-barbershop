@@ -1,10 +1,15 @@
+@font-face {
+    font-family: "PT Sans Narrow"; 
+    src: url('../fonts/web/ptsansnarrow.woff'); 
+}
+
 body {	
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 18px;
 	//color: #ffffff; 
     color: black;
 	font-weight: bold;
-	font-family: "PT Sans Narrow Bold";    
+	font-family: "PT Sans Narrow";    
 }
 
 h1 {
@@ -18,17 +23,21 @@ h2 {
     line-height: 30px;
     color: #000000;
 }
-*{
+
+ul {
+  list-style: none;  /* убираем у всех списков точки и пробелы */
   padding: 0;
   margin: 0;
 }
-
-
-ul {
-  list-style: none;  /* убираем у всех списков точки */
-}
 ul li {
-  background-color: aquamarine; 
+  background-color: aquamarine;   
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -44,18 +53,24 @@ ul li {
 }
 .barbershop-logo {  
   width: 150px;
-  height: 72px;
-  background: #939393 url('../img/Logo.png') no-repeat 50% 50%;     
-  float: left;
+  height: 72px;  
   margin-right: 40px;  
+  float: left;
+  background-color: aqua;
 }
 .catalog-nav {  
   width: 640px;
   float: left;
   background-color: antiquewhite;
 }
-.user-block {
-  //height: 72px;
+.catalog-nav li {  
+  padding-top: 27px;
+  padding-bottom: 24px;
+}
+.catalog-nav .active-page{
+  border-bottom: 4px solid white;
+}
+.user-block {  
   width: 100px;
   float: right;
   background-color: beige;
@@ -68,7 +83,7 @@ ul li {
 }
 .catalog-nav,
 .user-block {
-  margin-top: 29px;  
+  //margin-top: 29px;  
 }
 .catalog-nav ul {
   list-style: none;  
@@ -91,37 +106,57 @@ ul li {
 
 .searching-block {
   width: 220px;    
-  float: left;
-  background-color: beige;  
+  float: left;  
 }
 .items-index-block {
-  width: 700px; 
-  margin-left: 20px;
-  float: left;  
-  background-color: bisque;  
+  width: 700px;   
+  float: right;    
 }
 
-article {
-  background-color: darkgray;
-}
 .item-content {
   width: 220px;
   height: 290px;
   margin-right: 20px;
   margin-bottom: 20px;
-  float: left;
+  float: left;  
 }
 .item-content:nth-child(3n){
   margin-right: 0;
 }
 .item-title {
-  font-size: 12px;
-  padding: 5px 10px;
+  font-size: 12px;  
   height: 63px;
+  margin: 0 17px;
+}
+.price-and-buybtn {
+  width: 187px;
+  height: 43px;
+  margin: 0 auto;    
+  display: block;  
+}
+.price {
+  width: 109px;
+  height: 43px;
+  text-align: center;      
+  float: left; 
+  color: black;
+  background: rgba(0,0,0,0.1);  
+}
+.btn-buy {
+  width: 78px;
+  height: 43px;
+  float: right;
+  background-color: black;
+  text-align: center;
+}
+.price-and-buybtn:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .btn-pages {
-  margin-top: 45px;
-  margin-bottom: 50px;
+  margin-top: 25px;          /* =45px  20 article + 25px  */
+  margin-bottom: 50px;  
 }
 .btn-pages ul li {
   width: 43px;
@@ -174,26 +209,4 @@ article {
   height: 43px;
   background-color: black;
   color: white;
-}
-.price-and-buybtn {
-  width: 187px;
-  height: 43px;
-  margin: 0 auto;
-  background-color: #e5e5e5;  
-}
-.price {
-  width: 109px;
-  text-align: center;
-  margin-top: 12px;
-  float: left;
-  background-color: aqua;
-}
-.btn-buy {
-  width: 78px;
-  float: right;
-}
-.price-and-buybtn:after {
-  content: "";
-  display: table;
-  clear: both;
 }
