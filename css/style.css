@@ -32,7 +32,8 @@ ul {
 ul li {
   background-color: aquamarine;   
 }
-figure {
+figure,
+p {
   margin: 0;
   padding: 0;
 }
@@ -94,7 +95,9 @@ a {
 }
 
 .catalog-title-block, 
-.catalog-block {
+.catalog-block,
+.item-title-block,
+.item-block {
   background: url('../img/pattern-for-main-block.jpg') repeat;  /* фон для гланого содержимого */
   padding-top: 60px;
 }
@@ -186,6 +189,7 @@ a {
   margin-top: 60px;  
   float: left;  
   background-color: beige;
+	text-align: center;
 }
 
 .footer-copyright {
@@ -194,6 +198,7 @@ a {
   margin-top: 60px;  
   float: right;  
   background-color: beige;
+	text-align: center;
 }
 .footer-social ul li {
   width: 43px;
@@ -209,4 +214,54 @@ a {
   height: 43px;
   background-color: black;
   color: white;
+}
+/***************************** catalog-item *********************************/
+.item-header {
+  height: 72px;
+  //background-color: black;
+  background-color: burlywood;
+}
+.item-title-block {
+	padding-top: 0;
+}
+.item-title-block ul {
+  list-style: none;  
+}
+.item-title-block ul li {
+  float: left;
+  margin-right: 40px;
+}
+.item-gallery-block {
+	width: 460px;
+	float: left;
+	background-color: antiquewhite;
+}
+.item-description-block {
+	width: 400px;
+	float: right;
+}
+.big-picture-block{
+	//margin-bottom: 20px;
+}
+.small-gallery-block figure {
+	width: 140px;
+	height: 149px;
+	float: left;
+	margin-right: 20px;	
+	margin-top: 20px;
+}
+.small-gallery-block figure:nth-child(3n) {	
+	margin-right: 0;	
+}
+.item-in-stock {
+	width: 100px;
+	float: left;
+}
+.item-stock-article {
+	width: 125px;
+	float: right;
+}
+
+.item-block{
+	padding-bottom: 50px;
 }
